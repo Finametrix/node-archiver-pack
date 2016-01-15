@@ -1,0 +1,29 @@
+{
+  "name": "archiver-pack",
+  "version": "1.0.0",
+  "description": "Archive files with node-archiver with a promise",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --harmony --require co-mocha test"
+  },
+  "keywords": [
+    "archive",
+    "tar",
+    "gzip",
+    "promise"
+  ],
+  "author": "Antonio Bustos <abustos@finametrix.com>",
+  "license": "MIT",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/antoniobusrod/node-archiver-pack.git"
+  },
+  "dependencies": {
+    "archiver": "^0.21.0"
+  },
+  "devDependencies": {
+    "co-mocha": "^1.1.2",
+    "fs-extra-promise": "^0.3.1",
+    "mocha": "^2.3.4"
+  }
+}
