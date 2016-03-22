@@ -15,8 +15,8 @@
   "author": "Antonio Bustos <abustos@finametrix.com>",
   "license": "MIT",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/Finametrix/node-archiver-pack.git"
+    "type": "git",
+    "url": "https://github.com/Finametrix/node-archiver-pack.git"
   },
   "dependencies": {
     "archiver": "^0.21.0"
@@ -24,6 +24,6 @@
   "devDependencies": {
     "co-mocha": "^1.1.2",
     "fs-extra-promise": "^0.3.1",
-    "mocha": "^2.3.4"
+    "mocha": "^2.4.5"
   }
 }
