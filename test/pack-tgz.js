@@ -1,5 +1,6 @@
 "use strict";
 
+const assert = require('assert');
 const fs = require('fs-extra-promise');
 const path = require('path');
 
@@ -43,6 +44,29 @@ describe('NP pack-tgz integration tests', function() {
         },
       });
       yield stat(tgzFilePath);
+    });
+  });
+
+  describe('pack several txt missing files', function() {
+    it('should not pack succesfully', function*() {
+      const fakeFiles = [
+        'fake-a.txt',
+        'fake-b.txt',
+      ];
+      const tgzFilePath = path.join(testDir, 'foo.tar.gz');
+      try {
+        yield packTgz('tar', fakeFiles, tgzFilePath, {
+          gzip: true,
+          gzipOptions: {
+            level: 1
+          },
+        });
+      } catch (err) {
+        assert.strictEqual(err.code, 'ENOENT');
+        assert.strictEqual(err.path, 'fake-a.txt');
+        return;
+      }
+      throw new Error('archive should not end succesfully');
     });
   });
 
