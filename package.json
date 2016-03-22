@@ -2,7 +2,7 @@
   "name": "archiver-pack",
   "version": "1.0.0",
   "description": "Archive files with node-archiver with a promise",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "mocha --harmony --require co-mocha test"
   },
