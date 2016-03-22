@@ -1,10 +1,8 @@
 # archiver-pack
 
-[![Build Status](https://img.shields.io/travis/antoniobusrod/node-archiver-pack/master.svg)](http://travis-ci.org/antoniobusrod/node-archiver-pack)
-[![Dependency Status](https://img.shields.io/david/antoniobusrod/node-archiver-pack.svg)](https://david-dm.org/antoniobusrod/node-archiver-pack)
-[![Dev dependency Status](https://img.shields.io/david/dev/antoniobusrod/node-archiver-pack.svg)](https://david-dm.org/antoniobusrod/node-archiver-pack)
-[![Coverage Status](https://coveralls.io/repos/antoniobusrod/node-archiver-pack/badge.svg?branch=master&service=github)](https://coveralls.io/github/antoniobusrod/node-archiver-pack?branch=master)
-
+[![Build Status](https://img.shields.io/travis/Finametrix/node-archiver-pack/master.svg)](http://travis-ci.org/Finametrix/node-archiver-pack)
+[![Dependency Status](https://img.shields.io/david/Finametrix/node-archiver-pack.svg)](https://david-dm.org/Finametrix/node-archiver-pack)
+[![Dev dependency Status](https://img.shields.io/david/dev/Finametrix/node-archiver-pack.svg)](https://david-dm.org/Finametrix/node-archiver-pack)
 
 Archive files with any supported format returning a `Promise` object. It rely
 in [archiver](https://github.com/archiverjs/node-archiver) for archive generation.
