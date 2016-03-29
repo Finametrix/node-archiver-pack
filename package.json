@@ -1,6 +1,6 @@
 {
   "name": "archiver-pack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Archive files with node-archiver with a promise",
   "main": "./lib/index.js",
   "scripts": {
