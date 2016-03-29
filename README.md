@@ -10,7 +10,7 @@ in [archiver](https://github.com/archiverjs/node-archiver) for archive generatio
 ## Installation
 
 ```
-npm install node-archiver-pack
+npm install archiver-pack
 ```
 
 ## Usage
