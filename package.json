@@ -4,7 +4,7 @@
   "description": "Archive files with node-archiver with a promise",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "mocha --harmony --require co-mocha test"
+    "test": "mocha test"
   },
   "keywords": [
     "archive",
