@@ -9,17 +9,6 @@ const tmpdir = require('os').tmpdir();
 const uuid = require('node-uuid');
 const exec = require('child_process').exec;
 
-function stat(filePath) {
-  return new Promise(function(resolve, reject) {
-    fs.stat(filePath, function(err, res) {
-      if (err) {
-        return reject(err);
-      }
-      resolve(res);
-    });
-  });
-}
-
 describe('NP pack-tgz integration tests', function() {
   const packTgz = require('../');
 
@@ -48,7 +37,7 @@ describe('NP pack-tgz integration tests', function() {
           level: 1
         },
       });
-      yield stat(tgzFilePath);
+      yield fs.stat(tgzFilePath);
     });
   });
 
