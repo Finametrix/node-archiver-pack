@@ -4,7 +4,7 @@
   "description": "Archive files with node-archiver with a promise",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "mocha --harmony --require co-mocha test"
+    "test": "mocha test"
   },
   "keywords": [
     "archive",
@@ -19,11 +19,13 @@
     "url": "https://github.com/Finametrix/node-archiver-pack.git"
   },
   "dependencies": {
-    "archiver": "^0.21.0"
+    "archiver": "^1.0.0",
+    "mz": "^2.4.0"
   },
   "devDependencies": {
     "co-mocha": "^1.1.2",
-    "fs-extra-promise": "^0.3.1",
-    "mocha": "^2.4.5"
+    "fs-extra-promise": "^0.4.0",
+    "mocha": "^2.5.3",
+    "node-uuid": "^1.4.7"
   }
 }
